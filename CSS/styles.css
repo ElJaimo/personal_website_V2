@@ -1,0 +1,142 @@
+body {
+    font-family: 'Merriweather', serif; /*en general se usaran estos tipos de letra, a no ser que se especifique otra cosa*/
+    margin: 0;                          /*no es necesario poner unidades si es cero*/
+    text-align: center;    
+    color: #40514E;
+    }
+
+p {
+    line-height: 2;
+}
+
+h1 {
+    font-size: 5.625rem;               
+    margin: 50px auto 0 auto;          /*se puede especificar con solo dos, pero se pueden especificar los 4 lados */
+    font-family: 'Sacramento', cursive;/*si no esta disponible la primera, usa la segunda que es mas comun */
+    color: #66BFBF;                  
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #66BFBF;
+    font-weight: normal; 
+    font-size: 30px;               
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+
+a {
+    color: #11999E;
+}
+
+hr {
+    width: 7%;
+    margin: 100px auto;
+    height: 0;
+    border-style: dotted none none none;
+    border-color: #EAF6F6;
+    border-width: 10px;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+.top-container {
+    background-color: #EAF6F6;
+    position: relative;                 /*en relative se ocupa toda la "linea", por lo que no puede haber objetos al lado */
+    padding-top: 100px;               
+}
+
+.skills-img1 {
+    width: 30%;
+    height: 30%;
+    float: left;                /*esto permite que los elementos siguientes se coloque a la izquierda de la imagen (como en word*/
+    margin-right: 30px;         /*float es recomendable usarlo cuando se quiere poner texto rodeando a la imagen, no para posicionar*/
+}
+
+.skills-img2 {
+    width: 25%;
+    height: 25%;
+    border-radius: 200px;
+    object-fit: cover;                  
+    float: right;
+    margin-left: 30px;
+}
+
+.middle-container {  
+    padding: 80px 0;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    position: relative;
+    height: 150px;
+    margin-top: 40px;
+    padding-top: 50px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+}
+
+.footer-link {
+    color: #11999E;
+    margin: 30px;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+#pro {
+    text-decoration: underline;
+}
+
+#top-cloud {
+    position: absolute;                 /*la posicion es relativa al objeto "padre", puede estar en linea con otros objetos*/
+    right: 300px;                       /*son 300px separado del extremo derecho del objeto "padre" */
+    top: 50px; 
+}
+
+#bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+#profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;               /*si este valor es la mitad del ancho y el largo, la imagen es un circulo*/
+    object-fit: cover;
+}
